@@ -44,7 +44,11 @@ public class Product {
 		return value * quantity;
 	}
 	
-	public void productPercent(int percent) {
-		setValue(getValue() * (1 + percent / 100.0));
+	public void updatePricet(double percent) {
+		setValue(value * (1.0 + percent / 100.0));
+	}
+	
+	public double total() {
+		return value * quantity;
 	}
 }
